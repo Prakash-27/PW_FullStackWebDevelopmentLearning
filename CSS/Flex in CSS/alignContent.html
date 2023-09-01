@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            color: #ffffff;
+            height: 45vh;
+        }
+        .item{
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+            border: 1px solid black;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .start{
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .between{
+            align-content: space-between;
+        }
+        .around{
+            align-content: space-around;
+        }
+        .center{
+            align-content: center;
+        }
+        .evenly{
+            align-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- stretch is the default value of align-content -->
+        <p>align-content: stretch(default)</p>
+        <div class="container stretch">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+
+        <p>align-content: flex-start</p>
+        <div class="container start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+
+        <p>align-content: flex-end</p>
+        <div class="container end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+
+        <p>align-content: space-between</p>
+        <div class="container between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+
+        <p>align-content: space-around</p>
+        <div class="container around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, itaque?</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+
+        <p>align-content: center</p>
+        <div class="container center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+
+        <p>align-content: space-evenly</p>
+        <div class="container evenly">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+What is Responsive Web Design(RWD)?
+
+Responsive Web Design means Simply comfortably allowing the user to navigate and consume our content that's our what we are having here.
+
+Advantages of RWD:
+-----------------
+1.Improved User Experience
+2.Increased Mobile Traffic
+3.Cost and Time Efficiency
+4.Search Engine Optimization (SEO) Benefits
+
+
+Ways to implement Responsive Web Design:
+----------------------------------------
+1.Responsive LayOuts (All containers that we are designing try to have them in some kind of form that they automatically shrink on the which our LayOuts flexbox, percentage in the width, flex:wrap nowrap)
+2.Responsive images (images we can use max-width min-width, also we can maintain aspect ratio what to show what not to show, images also play a lot of role in that)
+3.Media Query (Through media query you can write a entire CSS again and there are cases which, One Css Designer has to write a Css for Web version you want to give a entirely different Experiencen may be on the web you want to give blueish Experience then Mobile you want to give them a greenish Experience for all of that you can write a entire Css again)
+4.Responsive Typography (The font also shrink becomes larger on the larger screen we can use rems, ems all of that usually you can handle all of the using media query so no such of a big deal)
+5.The ViewPort meta tag (Zoom level)
+
+Media:
+------
+all
+screen
+print
+speech
+
+Operators:
+----------
+and 
+or 
+
+BootStrap CSS BreakPoint.
+TailWind CSS BreakPoint.

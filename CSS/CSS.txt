@@ -1,0 +1,40 @@
+CSS 1
+CSS 2
+CSS 2.1
+CSS 3
+
+We Can Write CSS in 3 Types:
+----------------------------
+1.Inline CSS 
+2.Internal CSS
+3.External CSS
+
+Among the all 3 CSS Styling Method The Inline CSS will be given a Highest Priority.
+
+Top to Bottom Approach:
+-----------------------
+<!-- link:css -->
+    <link rel="stylesheet" href="style.css">
+Where ever You see the link:css Property First that will be There.
+Where ever you see the link:css Property Last that will be Over Writing the Property.
+Which of the link:css Property was Applied Last That will take Over the Power.
+
+This will be also for all 2 types of CSS, which ever will be the last that will be have the Power to Reflect on the Live Server.
+
+!important:
+-----------
+<style>
+        h1 {
+          font-size: 200px;
+          color: #6e1cbb !important;
+        }
+    </style>
+i)We can also use !important Property of CSS to higher or Top Most Priotize For The Color to Reflect on Live Server.
+ii)It's not a Great way to use it because it Messes Up CSSin Long Run, But You can actually Make it as higher Priority, But Don't do this in a General because it's not a good Idea, We want to get the Top to Bottom Flow .
+
+Basic Anatomy and Nomenclature:
+-------------------------------
+      Selectors -----> h1 { ----> Rule Block
+                         font-size: 200px; ----> Key Value : Pair (or) Property : Value Of Property.
+                         color: #6e1cbb;  
+    Rule Block<------ }        

@@ -1,0 +1,27 @@
+1)Flex box is the just a display property 
+display: Flex;
+
+It is a core property of CSS, no additional or library is not needed.
+
+In the world of Flex box there are two types of property 
+
+Basically we create parent container and how we control inside this element inside container this how flex box gowns.
+
+And one of the way is just mark all of your parent property in container it self and then the inside elements will align each other and some properties you can mention in the item itself, we will be working with them.
+
+There are two axis in the flex box is where how we control the things 
+i) Main axis
+ii)Other axis or Alternate axis 
+
+The default direction of the flex is main axis which is left to right.
+
+Main axis --> From Left to Right (or) in the Rows on the Web.
+
+Altrnate axis --> From top to bottom on the Web.
+
+In Mobile it changes In the Mobile world especially like react native something that you are building on the Mobile Apps The Main Axis is from Top to Bottom.
+
+justify talks about left to right wether it is justify or justify-content it's always talks about Main axis.
+
+align items is about top to bottom using the viewport height.
+

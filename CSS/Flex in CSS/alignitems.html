@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            height: 10vh;
+            border: 1px solid black;
+            color: #ffffff;
+        }
+        .item{
+            width: 50px;
+            /* height: 50px; */
+            background-color: blue;
+            border: 1px solid black;
+            color: aliceblue;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: start;
+        }
+        .end{
+            align-items: end;
+        }
+        .center{
+            align-items: center;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- flex-stretch is the default value of align-items -->
+
+        <p>align-items:stretch(default)</p>
+        <div class="container stretch">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <p>align-items: flex-start</p>
+        <div class="container start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <p>align-items: end</p>
+        <div class="container end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <p>align-items: center</p>
+        <div class="container center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <p>align-items: baseline</p>
+        <div class="container baseline">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+Introduction:
+------------
+CSS Grid is a powerful two-dimensional layout system that allows you to create complex and flexible layouts with rows and columns.
+
+Difference between Grid and flexbox:
+
+------------------------------------------------------------------------
+Property                | grid                    | Flexobox           |
+-----------------------------------------------------------------------|
+Dimension               | Two-Dimensional         | One-Dimensional    |
+-----------------------------------------------------------------------|
+Features                | can flex combination of | can push content   |
+                        | items through space-occu| element to extreme |
+                        | pying Features          | alignment          |
+                        |                         |                    |
+-----------------------------------------------------------------------|
+Support Type            | Layout First            | Content First      |
+------------------------------------------------------------------------
+
+Advantages of Grid:
+-------------------
+-> Flexibility
+-> Simplicity
+-> Precise positioning
+-> Accessibility
+-> Debugging
+
+Disadvantages of Grid:
+----------------------
+-> Browser Support
+-> Learning curve
+-> complexity
+-> Over-reliance
+-> Accessibility
+-> Compatibility with other layout methods
+----------------------------------------------------------------------------------
+Grid have Container and Grid items
+
+Container:
+----------
+->Layouting
+->Spacing
+->Alignment
+
+Introduction:
+-------------
+A grid Container is an HTML element that defines a grid layout. 
+To control the layout of the grid items within the Container. 
+Various CSS properties can be applied to the container itself. 
+
+Layouting:
+----------
+->grid-template-columns
+->grid-template-rows
+->grid-area
+->grid-template-areas
+->grid-template
+
+Spacing:
+--------
+->grid-column-gap
+-----------------
+grid-column-gap is a CSS property that defines the size of the gap or space between the
+columns of a grid. It is used to create space between the columns and make the grid more 
+visually appealing.
+
+->grid-row-gap
+->grid-gap
+
+Alignment:
+----------
+->justify-content:
+------------------
+
+
+--------------------------------------------------------------------------------------------------------
+Grid Item properties
+
+Introduction:
+-------------
+->grid-column-start and grid-column-end
+---------------------------------------
+This properties define the starting and ending positions of a grid item along the horizontal axis of the grid.
+
+->grid-row-start and grid-row-end
+---------------------------------
+grid-row-start and grid-row-end properties define the starting and ending positions of a grid item along the vertical axis of the grid.
+
+->justify-self and align-self
+-----------------------------
+justify-self and align-self properties control the alignment of a grid item within its grid cell along the horizontal and vertical axes, respectively.

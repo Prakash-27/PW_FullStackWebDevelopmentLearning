@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vw and vh</title>
+    <style>
+      .base {
+        background-color: #2f43f5;
+        color: #f0f8ff;
+        margin-bottom: 10px;
+      }
+
+      .fifty-percent {
+        width: 50%;
+      }
+
+      .vw50 {
+        width: 50vw;
+      }
+
+      .vh50 {
+        height: 50vh;
+      }
+
+      .box {
+        width: 250px;
+        border: 2px solid #000000;
+        height: 100px;
+      }
+
+      .rems li {
+        font-size: 2.5rem;
+      }
+
+      .min {
+        background-color: #d827bb;
+        color: #2f3536;
+        font-size: 17px;
+        height: 100vmin;
+        width: 100vmin;
+        margin-bottom: 50px;
+      }
+
+      .max {
+        background-color: #af4ae9;
+        color: #2f3536;
+        font-size: 20px;
+        height: 70vmax;
+        width: 70vmax;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="base fifty-percent">50%</div>
+    <div class="base vw50">50vw</div>
+    <div class="base vh50">50vh</div>
+    <!-- <div class="base vh50">50vh-2</div> -->
+    <!-- View Port Height is given again mean which will be have another view port height genrated in Screen to Scroll. -->
+
+    <h1>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem,
+      officia!
+    </h1>
+
+    <!-- Percentage get restriction from the Parents but view Port doesn't get it. -->
+    <div class="box">
+      <div class="base fifty-percent">50%</div>
+      <div class="base vw50">50vw</div>
+      <div class="base vh50">50vh</div>
+    </div>
+
+    <!-- rems - Relative Element Units -->
+    <!-- What Happens is by default the font size in HTML is 16px, it is 2.5 times of that 16px  -->
+    <!-- Now you go ahead and change HTML Font Size, it is some what 20px the text is Much more Bigger -->
+    <!-- The rems value is change according to the what is the default HTML value is, also it works on the Parent container if parent gets bigger the inside and inside elements also getting Huge and Humongous out of control easily.  -->
+    <!-- That why lots of people are don't like to use this rems, Usually they go for ems which is Not Relative.   -->
+    <!-- You use is always less pixels are good like wise the Percentage is also Good -->
+    <ul class="rems">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <ul>
+        <li>Three A</li>
+        <li>Three B</li>
+        <ul>
+          <li>Three B 2</li>
+        </ul>
+      </ul>
+    </ul>
+
+    <div class="min">
+        min
+        <br/>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni non dolores libero ad repellendus odit aut aspernatur mollitia, modi ea tenetur officia minus placeat harum! Doloremque reiciendis, quisquam cumque enim animi sequi reprehenderit iure a, molestias repellat ab rem consectetur similique sunt alias assumenda ipsum ea at iste id fugiat explicabo. Unde, accusantium. Consectetur aut quo, error tempore laudantium quibusdam! Perferendis delectus recusandae sed ipsa molestias dignissimos numquam officia provident magni, doloremque ex? Recusandae provident blanditiis eos consequuntur perferendis obcaecati? Nihil excepturi facere, dolores iure doloremque, aut quod mollitia velit aliquid enim laborum possimus nulla delectus? Facere, repellendus nulla debitis non voluptatibus libero. Numquam accusantium placeat dolorem ea provident! Debitis suscipit, omnis distinctio nam similique quasi quia officiis accusamus tenetur id, qui sed repellendus earum voluptatibus ratione culpa modi saepe minus. Culpa deserunt mollitia perferendis aliquid ullam doloribus eligendi aliquam tempora voluptates ipsum ipsam esse, beatae obcaecati amet tempore, vero harum quisquam minus eos, enim perspiciatis recusandae. Aliquid nam consectetur voluptatibus, sequi quam quos in repudiandae a aperiam velit provident voluptate iste error nulla incidunt distinctio necessitatibus atque, quod magni veritatis quo ea. Quidem et voluptates distinctio quasi officiis culpa quia deserunt molestiae, dolor magni architecto nulla maxime aliquam ea id incidunt in earum facere consectetur cumque provident commodi minima! Debitis architecto iusto, sapiente corrupti sequi culpa nam aliquam nesciunt voluptates repudiandae iste. Explicabo blanditiis aspernatur commodi ducimus voluptates debitis sed recusandae itaque, nesciunt fugit hic maxime! Aliquam, dolor. Placeat doloribus dolorem culpa nisi natus praesentium fugit voluptate nemo quod iure harum vel iste, modi magnam cum earum excepturi perspiciatis provident repudiandae rerum. Aperiam, facere? Eligendi minus eius quae quaerat nam! Quam sequi sunt, dolore iusto placeat molestiae. Aliquid possimus ipsum enim corrupti omnis ut. Sequi ea amet, quaerat iure quibusdam consequatur voluptatem, aperiam, doloremque delectus similique fugit voluptates quisquam. Cumque iste iusto, quaerat eligendi sint saepe illo iure excepturi perspiciatis nemo culpa magnam voluptates quia obcaecati. Ex maiores ab, eaque facilis voluptatibus laboriosam at odit reprehenderit harum aliquid consectetur, totam rem iure id nulla quia dolore tenetur. Distinctio consectetur perferendis sed rem commodi illum consequatur reprehenderit nesciunt,
+    </div>
+
+    <div class="max">
+        max
+        <br/>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolorum rerum aliquid consequuntur magnam. Optio eaque excepturi nam dolore deleniti maiores facere accusantium corrupti natus qui voluptate velit aliquid quisquam quam nulla, quaerat cupiditate earum aperiam ut officia expedita. Natus suscipit cupiditate commodi non sit necessitatibus, officia impedit doloribus, totam odio repudiandae eius perspiciatis, animi ducimus sed? Eligendi voluptates ut vel vero. Iste cum labore id cupiditate iure aperiam magnam facere fuga aspernatur optio ipsum reprehenderit ratione quae, ex asperiores voluptates quibusdam libero incidunt odio. Officiis quae est natus. Sit magnam similique, minima iste reiciendis quam enim temporibus provident culpa nisi dicta voluptates itaque architecto commodi saepe. Ut esse molestiae aspernatur architecto dicta reiciendis temporibus ipsum consequuntur quos nobis, est nihil autem veritatis enim facilis officiis magni omnis similique, dolor soluta praesentium repellat fugit, quaerat optio! Exercitationem itaque iste assumenda molestiae atque, numquam neque. Nobis nam laboriosam alias! Doloremque nulla laudantium provident cupiditate qui sit earum, adipisci sint velit pariatur illum excepturi quia aperiam iste voluptate, odit debitis, ratione tempora nesciunt voluptatum? Eius, qui explicabo a pariatur ducimus quae ea, eaque impedit iure fuga aut possimus sed nulla quibusdam facilis accusamus assumenda et. Eligendi sint pariatur nesciunt sunt suscipit. Distinctio perspiciatis, nesciunt doloremque necessitatibus, debitis et provident placeat quaerat saepe adipisci quisquam rem quia sed soluta dolores reiciendis animi a dolorem. Dolorum ex mollitia nihil recusandae tempora ut sed aut blanditiis exercitationem sunt sit odit, numquam quae temporibus esse incidunt, dolorem sapiente harum! Sit perferendis quod doloribus corrupti optio, magnam adipisci? Repellat voluptatum maxime porro eum itaque alias, corrupti est ex doloremque corporis optio officiis, saepe suscipit nobis nam fuga aliquid quod iure consectetur harum facere nihil dolores fugit? Molestias tempore sapiente maxime eveniet molestiae ex, fuga voluptatibus odio officia ut similique tempora repellendus dolorum rerum modi? Magnam fugit possimus ut sequi. Quo, eius hic. Itaque, nesciunt quos. Officiis maxime, ducimus ad quia dolores consequuntur dolorem repellat sapiente tempora doloremque odio quidem autem non harum minima quae deleniti tempore, nihil nobis vel ut in dignissimos. Laboriosam repudiandae dolorem totam eligendi culpa facere rerum! Perspiciatis provident dicta illum laudantium quidem quasi cumque, ducimus consectetur. Facere minima distinctio doloremque molestias. Eveniet iure ea mollitia architecto nemo alias expedita voluptatum dolorum consectetur, cumque, fugiat repellendus nam debitis suscipit quidem porro ullam deserunt. Sunt consectetur accusantium quaerat, laborum incidunt reprehenderit porro? Fugiat, voluptas quia illum amet dolore cum iure ea eius doloribus, modi nobis, accusamus sapiente ullam necessitatibus. Facere nostrum asperiores commodi similique natus? Maiores sunt sit doloremque eveniet vitae temporibus itaque deserunt ducimus. Delectus, natus molestias itaque hic nisi repudiandae nesciunt totam odio modi similique saepe consequatur placeat exercitationem. Dolorem atque optio sapiente, molestias odio facere quasi non provident itaque officia et distinctio enim recusandae architecto. Eveniet nam aperiam natus, repellat in nostrum cum reprehenderit? Explicabo repellat, minima nostrum provident voluptates distinctio officia cupiditate dicta sunt suscipit magnam fugiat obcaecati, quod consequuntur possimus aspernatur unde dolore soluta! Inventore tenetur magnam consequatur placeat aliquam tempora est iste nobis ipsum, in consequuntur odit incidunt, ad cum temporibus iusto quam delectus dolore, perferendis ea totam optio porro facilis dolorum? Quos ullam dolores beatae in aspernatur, tenetur esse! Laborum atque tempora vero optio at odit magni error, perspiciatis deserunt rem molestias deleniti accusantium odio eveniet maiores corrupti voluptate. Accusamus non sint qui, amet quisquam quae beatae voluptate rem quidem labore repellendus mollitia consectetur aliquid expedita recusandae quos atque laborum enim voluptatum nisi sapiente perspiciatis quaerat sit omnis! Maiores magni accusamus et ipsum. Soluta distinctio eveniet consectetur sapiente nemo iste necessitatibus laudantium nesciunt culpa error iure mollitia voluptatem saepe, ipsa et consequuntur eum rerum a quos deserunt reprehenderit ea corrupti earum! Iusto perspiciatis doloribus nulla voluptatum? Natus,
+    </div>
+
+    <!-- The vmin and vmax units allow you to access the size of the smaller or the larger side of the viewport, according to the following rules:
+    
+        100vmin = 100vw or 100vh, whichever is smaller
+        1vmin = 1vw or 1vh, whichever is smaller
+        
+        100vmax = 100vw or 100vh, whichever is larger
+        1vmax = 1vw or 1vh, whichever is larger
+
+        So, in case of a portrait orientation, 100vmin is equal to 100vw, as the viewport is smaller horizontally than vertically.
+        For the same reason, 100vmax will be equal to 100vh.
+
+        Similarly, in case of a landscape orientation, 100vmin is equal to 100vh, as the viewport is smaller vertically than horizontally. And, of course, 100vmax will be equal to 100vw
+        here.
+    
+    -->
+  </body>
+</html>

@@ -1,0 +1,697 @@
+1.What is the purpose of the image tag in HTML?
+
+
+To display images on a web page
+
+
+To link to external web pages
+
+
+To format text on a web page
+
+
+To add audio files to a web page
+
+2.What is the syntax for adding an image to an HTML page?
+
+
+img href="image.jpg"
+
+
+img src="image.jpg"
+
+
+img alt="image.jpg"
+
+
+img link="image.jpg"
+
+3.What is the purpose of the "alt" attribute in the image tag?
+
+
+To specify the location of the image file
+
+
+To provide a description of the image for accessibility purposes
+
+
+To resize the image
+
+
+To add a border around the image
+
+4.Which attribute is used to specify the height of an image in HTML?
+
+
+width
+
+
+height
+
+
+size
+
+
+length
+
+5.What is a form in HTML used for?
+
+
+To display images on a web page
+
+
+To link to external web pages
+
+
+To format text on a web page
+
+
+To allow users to input data on a web page
+
+6.Which HTML element is used to create a form?
+
+
+form
+
+
+input
+
+
+label
+
+
+button
+
+7.Which input type is used for a text field in an HTML form?
+
+
+text
+
+
+checkbox
+
+
+radio
+
+
+password
+
+8.Which attribute is used to specify the type of input in an HTML form?
+
+
+type
+
+
+Name
+
+
+Value
+
+
+Placeholder
+
+9.Which attribute is used to associate a label with an input field in an HTML form?
+
+
+id
+
+
+Class
+
+
+Name
+
+
+For
+
+10.What is the purpose of the input tag in HTML?
+
+
+To display text on a web page
+
+
+To create clickable links
+
+
+To allow users to input data on a web page
+
+
+To add images to a web page
+
+11.Which attribute is used to specify the type of input in an HTML form?
+
+
+Type
+
+
+Name
+
+
+Value
+
+
+Placeholder
+
+12.Which input type is used for a checkbox in an HTML form?
+
+
+checkbox
+
+
+radio
+
+
+text
+
+
+password
+
+13.Which input type is used for a radio button in an HTML form?
+
+
+checkbox
+
+
+radio
+
+
+text
+
+
+password
+
+14.Which input type is used for a password field in an HTML form?
+
+
+checkbox
+
+
+radio
+
+
+text
+
+
+password
+
+15.Which HTML attribute sets the initial value of an input element?
+
+
+Value
+
+
+Default
+
+
+initial
+
+
+None of the Above 
+
+16.Which HTML input type is used for a date picker?
+
+
+Data
+
+
+Text
+
+
+Number
+
+
+Range
+
+17.Which HTML attribute is used to specify the maximum number of characters allowed in a text input field?
+
+
+maxlength
+
+
+maxchars
+
+
+Limit
+
+
+None of the above
+
+18.Which HTML input type is used for a dropdown list?
+
+
+select
+
+
+Dropdown
+
+
+Menu
+
+
+List
+
+19.Which HTML attribute is used to make an input field read-only?
+
+
+readonly
+
+
+disabled
+
+
+required
+
+
+autofocus
+
+20.Which HTML input type is used for a search field?
+
+
+Search
+
+
+Text
+
+
+Email
+
+
+URL
+
+21.Which HTML attribute is used to specify the minimum value of a number input field?
+
+
+Min
+
+
+Max
+
+
+Step
+
+
+Value
+
+22.Which HTML attribute is used to specify a label for an input field?
+
+
+Label
+
+
+Name
+
+
+Id
+
+
+For
+
+23.Which HTML attribute is used to specify the URL where the form data is sent when submitted?
+
+
+method
+
+
+action
+
+
+enctype
+
+
+target
+
+24.Which HTML input type is used for an email address field?
+
+
+Email
+
+
+Text
+
+
+Number
+
+
+Password
+
+25.Which HTML input type is used for a phone number field?
+
+
+Tel
+
+
+Text
+
+
+Number
+
+
+Password
+
+26.When was the first version of HTML introduced?
+
+
+1985
+
+
+1991
+
+
+1995
+
+
+2000
+
+27.Who invented HTML?
+
+
+Tim Berners-Lee
+
+
+Steve Jobs
+
+
+Bill Gates
+
+
+Mark Zuckerberg
+
+28.What was the original purpose of HTML?
+
+
+To create dynamic web applications
+
+
+To build complex databases
+
+
+To share scientific research papers
+
+
+To publish and share hypertext documents
+
+29.Which tag is used to define the header in HTML 5?
+
+
+header
+
+
+nav
+
+
+section
+
+
+article
+
+30.Which tag is used to define a section in HTML 5?
+
+
+header
+
+
+nav
+
+
+section
+
+
+article
+
+31.Which tag is used to define a video in HTML 5?
+
+
+video
+
+media
+
+
+movie
+
+
+film
+
+32.Which tag is used to define a canvas in HTML 5?
+
+
+canvas
+
+
+paint
+
+
+draw
+
+
+sketch
+
+33.What is an HTML entity?
+
+
+A special character that is used to define tags
+
+
+A symbol that represents a letter or character
+
+
+A reserved word that has a special meaning in HTML
+
+
+None of the above
+
+34.Which HTML entity is used to represent the copyright symbol?
+
+
+©
+
+
+®
+
+
+™
+
+
+§
+
+35.Which HTML entity is used to represent the greater than symbol?
+
+
+>
+
+
+<
+
+
+&
+
+
+"
+
+36.Which HTML entity is used to represent the trademark symbol?
+
+
+©
+
+
+®
+
+
+™
+
+
+§
+
+37.What is web accessibility?
+
+
+A measure of how fast a web page loads.
+
+
+A measure of how easily a web page can be navigated.
+
+
+A measure of how easily a web page can be used by people with disabilities.
+
+
+A measure of how visually appealing a web page is.
+
+38.Which of the following is an example of an accessibility barrier?
+
+
+A web page with too many images.
+
+
+A web page with too much text.
+
+
+A web page that cannot be navigated using a keyboard.
+
+
+A web page with too many links.
+
+39.Which HTML attribute is used to provide alternative text for images?
+
+
+alt
+
+
+src
+
+
+href
+
+
+title
+
+40.Which HTML tag is used to provide a title for a web page?
+
+
+head
+
+
+title
+
+
+body
+
+
+header
+
+41.Which HTML tag is used to define a hyperlink?
+
+
+img
+
+
+a
+
+
+div
+
+
+p
+
+42.Which HTML tag is used to define a table?
+
+
+table
+
+
+form
+
+
+div
+
+
+section
+
+43.Which HTML attribute is used to specify the language of a web page?
+
+
+lang
+
+
+href
+
+
+alt
+
+
+src
+
+44.Which HTML tag is used to define a heading?
+
+
+h1 to
+
+
+p
+
+
+img
+
+
+a
+
+45.Which HTML tag is used to define a list?
+
+
+ul and li
+
+
+table and tr
+
+
+div and p
+
+
+header and nav
+
+46.What is ARIA in HTML?
+
+
+A language used to describe the appearance of a web page.
+
+
+A language used to define the structure of a web page.
+
+
+A set of attributes used to describe the accessibility features of a web page.
+
+
+A set of tags used to create dynamic content on a web page.
+
+47.What is the purpose of ARIA attributes?
+
+
+To describe the visual appearance of a web page.
+
+
+To define the structure of a web page.
+
+
+To provide additional information about elements on a web page to assistive technology.
+
+
+To create interactive animations and effects on a web page.
+
+48.Which ARIA attribute is used to provide a label for an element that does not have one?
+
+
+aria-hidden
+
+
+aria-labelledby
+
+
+aria-controls
+
+
+aria-describedby
+
+49.What are semantics in HTML?
+
+
+The visual appearance of a web page.
+
+
+The underlying structure and meaning of a web page.
+
+
+The scripting language used to create dynamic content on a web page.
+
+
+The method used to optimize a web page for search engines.
+
+50.Which HTML tag is used to define the main content of a web page?
+
+header
+
+
+nav
+
+
+main
+
+
+section

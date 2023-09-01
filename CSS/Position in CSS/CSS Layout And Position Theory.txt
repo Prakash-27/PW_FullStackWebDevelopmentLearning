@@ -1,0 +1,16 @@
+CSS LayOut
+
+LayOut techniques
+   Normal LayOut
+   Float  LayOut
+   Flex   LayOut
+   Grid   LayOut
+
+
+
+CSS Positioning
+    Static
+    Relative
+    Absolute 
+    Fixed --> Which is used to Fixed the element like image, even though we scroll the webpage the image won't Scroll it all. 
+    Sticky --> It is kind of Hybrid Model of Relative and Fixed.   

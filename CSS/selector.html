@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* background-color: #000; */
+        }
+
+        /* h2 {
+            background-color: #0c0cdf;
+            color: #f0f8ff;
+        } */
+
+        .bg-red {
+            background-color: #a40808;
+        }
+
+        #bg-orange {
+            background-color: #ffa500;
+        }
+
+        a[target="_blank"] {
+            background-color: #15d9d9;
+        }
+
+        h3, h4 {
+             background-color: #f14040;
+             color: #f0f8ff;
+        }
+
+        ul li {
+            background-color: #d423e4;
+        }
+
+        header > a {
+            background-color: #83eb0d;
+        }
+
+        #Logo {
+            background-color:#2fb488;
+        }
+
+        /* Any Sibling */
+        img ~ p {
+            font-size: larger;
+            background-color: #fad70f;
+            color: #f0f8ff;
+        }
+
+        /* Adjacent Sibling */
+        img + p {
+            background-color: #fd47b8;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>  
+    <h2 class="bg-red">this is heading 2</h2>
+
+    <h1 class="bg-red" id="bg-orange">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <h2 id="bg-orange">Lorem ipsum dolor sit amet.</h2>
+
+    <a href="https://pwskills.com">PW Skills</a>
+    <a target="_blank" href="https://ineuron.ai">iNeuron</a>
+
+    <h3>Lorem, ipsum dolor.</h3>
+    <h4>Lorem ipsum dolor sit amet.</h4>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+    </ul>
+    <li>Three</li>
+
+    <header>
+        <a href="#">Google</a>
+        <nav>
+            <ul>
+                <li id="Logo">Logo</li>
+            </ul>
+            <a href="#">Yahoo</a>
+        </nav>
+    </header>
+
+    <!-- Any Sibling  -->
+    <div>
+        <img src="#" alt="">
+        <h5>This is h5 Tag</h5>
+        <p>This is a Paragraph</p>
+    </div>
+
+    <!-- Adjacent Sibling -->
+    <div>
+        <img src="#" alt="">
+        <p>Adjacent Sibling</p>
+    </div>
+
+</body>
+</html>

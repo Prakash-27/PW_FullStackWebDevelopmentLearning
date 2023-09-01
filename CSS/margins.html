@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Padding Border Outline And CSS Box Model</title>
+    <style>
+
+      /*Margin Styling */
+      /* h1 {
+        border: solid #2fcf6c;
+        background-color: #d8bfd8;
+        color: #000000;
+        margin: 20px;
+      } */
+
+      /* .elementOne {
+        margin-top: 40px;
+      } */
+
+      /* .elementTwo {
+        margin: 10px 20px 30px 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      } */
+
+     /* Margin Collapse: Element 1 margin-bottom: 30px; and Element 2 margin-top: 100px */
+     /* This Happens Only in the Top and Bottom sides not for left and right sides */
+     /* What ever the Highest value is that will be Taken Up and Other value is not consider*/
+     /* If you notice that 30px + 100px is Technically it should be 130px but it doesn't this Know as Margin Collapse. */
+      
+     /*Padding Styling*/
+     /* .boxTwo {
+        border: solid;
+        padding: 30px 20px 40px 50px;
+        padding-top: 20px;
+     } */
+
+    /* Border */
+    /* .dotted {
+        border-style: solid;
+        border-width: 4px;
+        border-color: #ff7f50;
+        border-radius: 5px 10px 15px 20px;
+    }
+
+    .mixup {
+        border-top-style: dashed;
+        border-right-style: dotted;
+        border-bottom-style: solid;
+        border-left-style: inset;
+    }
+
+    .groove {
+        border: 5px groove magenta;
+    } */
+
+    /* Outline/Offset */
+    .offset {
+        margin: 3rem;
+        border-style: solid;
+        outline-style: solid;
+        outline-color: brown;
+        outline-offset: 10px;
+       
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- Margin code -->
+    <!-- <h1>Lorem ipsum dolor sit amet consectetur.</h1> -->
+
+    <!-- <div class="elementOne">Element 1</div>
+    <div class="elementTwo">Element 2</div>
+    <div class="elementThree">Element 3</div> -->
+
+    <!-- Padding code -->
+    <!-- <div class="boxOne">
+        <h2 class="heading">P Padding P</h2>
+    </div>
+    <div class="boxTwo">
+        <h2 class="heading">P Padding P</h2>
+    </div>
+    <div class="boxThree">
+        <h2 class="heading">P Padding P</h2>
+    </div> -->
+
+    <!-- Border Code -->
+    <!-- <div class="none">none</div>
+    <div class="solid">solid</div>
+    <div class="dotted">dotted</div>
+    <div class="dashed">dashed</div>
+    <div class="double">double</div>
+    <div class="groove">groove</div>
+    <div class="ridge">ridge</div>
+    <div class="inset">inset</div>
+    <div class="outset">outset</div>
+    <div class="mixup">dashed, dotted, solid, and inset</div> -->
+
+    <!-- Outline Code -->
+    <div class="offset">Outline</div>
+
+
+
+  </body>
+</html>

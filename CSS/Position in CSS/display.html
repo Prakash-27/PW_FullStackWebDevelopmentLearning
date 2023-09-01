@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3, p, li {
+            background-color: #7e0202;
+            color: #ffffff;
+            border: 5px solid #bbbb00;
+            padding: 10px;
+        }
+
+        .item {
+             display: none; /*block inline inline-block*/
+            background-color: #7e0202;
+            color: #ffffff;
+            border: 5px solid #bbbb00;
+            padding: 10px;
+        }
+
+        .item2 {
+            height: 100px;
+        }
+
+        .One_img {
+            display: none;
+            /* opacity: 0; */
+        }
+
+        .Second_img {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h3>Normal LayOut</h3>
+    <p>Elements are placed in the order in which they appear in the HTML Document, and their positions are determined by their default positioning Properties.</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <div>
+        <div class="item1 item">Item 1</div>
+        <div class="item2 item">Item 2</div>
+        <div class="item3 item">Item 3</div>
+    </div>
+
+    <p>Text Before image</p>
+    <img src="/CSS/pexels-hitesh-choudhary-3532546.jpg" width="500px" class="One_img" />
+
+    <img src="/CSS/pexels-hitesh-choudhary-3532546.jpg" width="500px" class="Second_img" />
+    <p>Text After image</p>
+</body>
+</html>

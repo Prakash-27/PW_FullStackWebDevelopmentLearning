@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body style="background-color: black; color: azure; ">
+
+    <h1>Intro to forms in HTML</h1>
+    <form action="/register.js" method="get">
+
+        <label for="Useremail">Enter Your email</label>
+        <input type="email" value="WoW@WoW.com" placeholder="Enter Your email" name="email" id="Useremail" required>
+        <br/>
+        <label for="UserPassword">Enter your Password</label>
+        <input type="password" placeholder="Enter Your Password" name="password" id="UserPassword" required>
+        <br/>
+        <label for="Color">Click on Favorite Color</label>
+        <input type="color" name="color" id="color">
+        <br/>
+        <label for="Month">Click on your Favorite Month</label>
+        <input type="month" name="month" id="month">
+        <br/>
+        <label for="Num">Number</label>
+        <input type="number" name="number" id="Num">
+        <br/>
+        <ul style="list-style: none;">
+            <label for="Option">CheckBox Options</label>
+            <li><input type="checkbox" name="checkbox01" id="Option" value="1">Milk</li>
+            <li><input type="checkbox" name="checkbox02" id="Option" value="2">Butter</li>
+        </ul>
+    
+        <label for="textarea">Enter your Text in Textarea</Textarea></label>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <br/>
+        <label for="Submit">Submit:</label>
+        <input type="submit" value="Feed The Data" style="color: #ff0000;">
+        <br/>
+        <ul>
+            <label for="Options">Radio</label>
+            <li><input type="radio" name="selected" id="Options" value="3">Hello FM</li>
+            <li><input type="radio" name="nonselected" id="Options" value="4">Suriyan FM</li>
+            <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </ul>
+    </form>
+</body>
+</html>

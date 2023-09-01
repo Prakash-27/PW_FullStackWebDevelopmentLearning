@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid auto flow</title>
+    <style>
+      /* .container {
+        border: 2px solid black;
+        display: grid;
+        grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+      } */
+      .container1{
+        /* border: 2px solid black; */
+        display: grid;
+        grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+        grid-auto-flow: column;
+        padding-bottom: 20px;
+      }
+      .container2{
+        /* border: 2px solid black; */
+        display: grid;
+        grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+        grid-auto-flow: row;
+        padding-top: 20px;
+      }
+      .item {
+        border: 1px solid #ccc;
+      }
+      .lorem {
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+      <hr />
+      <div class="container2">
+        <div class="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          perferendis eveniet beatae aut odit sequi cumque impedit velit
+          molestiae eum?
+        </div>
+        <div class="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          perferendis eveniet beatae aut odit sequi cumque impedit velit
+          molestiae eum?
+        </div>
+        <div class="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          perferendis eveniet beatae aut odit sequi cumque impedit velit
+          molestiae eum?
+        </div>
+        <div class="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          perferendis eveniet beatae aut odit sequi cumque impedit velit
+          molestiae eum?
+        </div>
+        <div class="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          perferendis eveniet beatae aut odit sequi cumque impedit velit
+          molestiae eum?
+        </div>
+        <div class="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          perferendis eveniet beatae aut odit sequi cumque impedit velit
+          molestiae eum?
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

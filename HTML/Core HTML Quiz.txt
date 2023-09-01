@@ -1,0 +1,534 @@
+1.What does HTML stand for?
+
+Hyper Text Markup Language
+
+
+Hyperlinks and Text Markup Language
+
+
+Home Tool Markup Language
+
+
+High Tech Markup Language
+
+2.What is the purpose of HTML comments?
+
+
+To make the code look neat and organized
+
+
+To add extra functionality to the code
+
+
+To explain the code to other developers
+
+
+To prevent the code from being executed by the browser
+
+3.Can HTML comments be nested?
+
+Yes
+
+
+No
+
+4.What is the purpose of nesting HTML comments?
+
+
+To make the code look neat and organized
+
+
+To add extra functionality to the code
+
+
+To explain the code to other developers
+
+
+To hide comments from other developers
+
+5.What is the purpose of HTML tags?
+
+
+To define the structure and content of a web page
+
+
+To style the content of a web page
+
+
+To define the functionality of a web page
+
+
+To define the layout of a web page
+
+6.Which HTML tag is used to create a hyperlink?
+
+
+a
+
+
+h1
+
+
+p
+
+
+img
+
+7.Which HTML tag is used to display an image on a web page?
+
+
+a
+
+
+h1
+
+
+p
+
+
+img
+
+8.Which HTML tag is used to define a table?
+
+
+table
+
+
+div
+
+
+section
+
+
+nav
+
+9.What is Emmet?
+
+
+A programming language
+
+
+A text editor
+
+
+A markup language abbreviation syntax
+
+
+A web framework
+
+10.What is the purpose of Emmet?
+
+
+To write HTML and CSS code faster and more efficiently
+
+
+To create web animations and interactive effects
+
+
+To optimize website performance and speed
+
+
+To manage database connections and queries
+
+11.How is Emmet syntax used to write HTML and CSS code?
+
+By typing shortcuts and abbreviations that expand into HTML and CSS code
+
+
+By using visual drag-and-drop tools in a web browser
+
+
+By writing code manually line-by-line
+
+
+By using pre-built templates and themes
+
+12.Which text editors and IDEs support Emmet?
+
+
+Only Sublime Text
+
+
+Only Visual Studio Code
+
+
+Only Atom
+
+
+Many popular text editors and IDEs, including Sublime Text, Visual Studio Code, Atom, and others
+
+13.How is div.main used in Emmet syntax?
+
+To create a div container with a class of "main"
+
+
+To create a main tag with a class of "div"
+
+
+To create a div container with an ID of "main"
+
+
+To create a div container with a class of "div main"
+
+14.What is the purpose of grouping elements in HTML?
+
+To create a table layout
+
+To define the structure and content of a web page
+
+To apply styles to multiple elements at once
+
+To improve website performance and speed
+
+15.Which HTML tag is used to group elements together?
+
+
+div
+
+
+table
+
+
+li
+
+
+img
+
+16.Can multiple HTML elements be grouped together using the tag?
+
+Yes
+
+
+No
+
+17.What is the purpose of formatting tags in HTML?
+
+
+To add structure to a web page
+
+
+To define the content of a web page
+
+
+To format text and other content on a web page
+
+
+To link to other web pages or resources
+
+18.Which HTML tag is used to italicize text?
+
+ i
+
+
+ italic
+
+
+ em
+
+
+ italicize
+
+19.Which HTML tag is used to underline text?
+
+
+ u
+
+
+ underline
+
+
+ s
+
+
+strike
+
+20.What is the purpose of the tag in HTML?
+
+
+To emphasize text
+
+
+To add structure to a web page
+
+
+To link to other web pages or resources
+
+
+To format text
+
+21.What is the main difference between inline and block elements in HTML?
+
+
+Inline elements are used for text while block elements are used for images and other media.
+
+
+Inline elements flow horizontally while block elements flow vertically.
+
+
+Inline elements take up the full width of the page while block elements only take up the width of their content.
+
+
+Inline elements do not create line breaks while block elements create line breaks.
+
+22.Which of the following is an example of a block element in HTML?
+
+
+a
+
+
+span
+
+
+img
+
+
+p
+
+23.Which of the following is an example of an inline element in HTML?
+
+
+div
+
+
+h1
+
+
+img
+
+
+span
+
+24.How are inline elements displayed in relation to each other?
+
+
+They are stacked vertically
+
+
+They are stacked horizontally
+
+
+They overlap each other
+
+
+There is no specific order in which they are displayed
+
+25.Can block elements be nested inside inline elements?
+
+
+Yes
+
+
+No
+
+26.Which HTML tag is used to create an unordered list?
+
+
+ul
+
+
+li
+
+
+ol
+
+
+dl
+
+27.Which HTML tag is used to create an ordered list?
+
+
+ol
+
+
+li
+
+
+ul
+
+
+dl
+
+28.Which HTML tag is used to create a list item?
+
+
+li
+
+
+ul
+
+
+ol
+
+
+dl
+
+29.Can a list item contain other HTML tags?
+
+
+Yes
+
+
+No
+
+30.Which HTML tag is used to create a hyperlink?
+
+
+a
+
+
+href
+
+
+link
+
+
+url
+
+31.What is the attribute used to specify the URL of the page to which the hyperlink points?
+
+
+href
+
+
+src
+
+
+alt
+
+
+title
+
+32.What is the attribute used to specify the text to be displayed for the hyperlink?
+
+
+href
+
+
+src
+
+
+alt
+
+
+title
+
+33.What is the attribute used to specify additional information about the hyperlink?
+
+
+href
+
+
+src
+
+
+alt
+
+
+title
+
+34.Can a hyperlink point to a specific section of the same page?
+
+
+Yes
+
+
+No
+
+35.Which HTML tag is used to create a table?
+
+
+table
+
+
+tr
+
+
+td
+
+
+th
+
+36.Which HTML tag is used to define a table row?
+
+
+table
+
+
+tr
+
+
+td
+
+
+th
+
+37.
+Which HTML tag is used to define a table cell?
+
+
+table
+
+
+tr
+
+
+td
+
+
+th
+
+38.Which HTML tag is used to define a table header cell?
+
+
+table
+
+
+tr
+
+
+td
+
+
+th
+
+39.What is the attribute used to specify the border of a table?
+
+
+border
+
+
+cellspacing
+
+
+cellpadding
+
+
+frame
+
+40.What does SEO stand for?
+
+
+Search Engine Optimization
+
+
+Social Engagement Optimization
+
+
+Sales Engagement Optimization
+
+
+Social Engine Optimization
+
+41.What is the primary goal of SEO?
+
+
+To increase website traffic
+
+
+To decrease website traffic
+
+
+To decrease website ranking
+
+
+To increase website downtime

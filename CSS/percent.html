@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percent</title>
+    <style>
+        .base {
+            background-color: #2f43f5;
+            color: #f0f8ff;
+        }
+
+        .fifty-percent {
+            width: 50%;
+        }
+
+        .hundered-px {
+            width: 100px;
+        }
+
+        .box {
+            width: 500px;
+            border: 2px solid #000000;
+            text-align: right;
+        }
+        .box1{
+            width: 250px;
+            border: 2px solid #000000;
+            margin: 15px 15px 15px 0;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="base fifty-percent">50%</div>
+    <div class="base hundered-px">100px</div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+    <!-- percent: is always Relative to its Parent container, what ever is the near by parent container -->
+    <div class="box">500px width
+        <div class="base fifty-percent">50%</div>
+        <div class="base hundered-px">100px</div>
+
+        <div class="box1">250px width
+           <div class="base fifty-percent">50%</div>
+           <div class="base hundered-px">100px</div>
+        </div>
+    </div>
+</body>
+</html>

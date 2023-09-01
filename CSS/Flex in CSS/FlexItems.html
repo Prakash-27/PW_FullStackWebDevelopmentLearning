@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            color: #ffffff;
+            height: 20vh;
+        }
+        .item{
+            width: 50px;
+            height: 50px;
+            background-color: #1163d0;
+            border: 1px solid black;
+        }
+        .item-1{
+            /* order: 4; */
+            /* align-self: center; */
+            /* flex-grow: 1; */
+        }
+        .item-2{
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 0; */
+        }
+        .item-3{
+            /* order: 3; */
+            /* flex-grow: 3; */
+        }
+        .item-4{
+            /* order: 1; */
+            /* flex-grow: 4; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="item item-1">1box</div>
+        <div class="item item-2">2box</div>
+        <div class="item item-3">3box</div>
+        <div class="item item-4">4box</div>
+    </div>
+    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flex Cheat Sheet</a>
+    <!-- flex grow defaultly 0  
+
+    ->when you provide value 1 for flex-grow:1; it will take the highest width of the row or container.
+
+    ->As same if the container have 4 box's if you are giving the flex-grow value for each box, then based on the ratio like 2:1, 3:4 the highest value gets maximum width for the row, other boxes will get width based on there ratio.
+    -->
+</body>
+</html>

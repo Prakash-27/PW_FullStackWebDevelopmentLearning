@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        nav{
+            display: flex;
+            gap: 0.5rem;
+        }
+        a{
+            flex: 1;
+            color: #fff;
+            border: 1px solid;
+            background-color: #333;
+            padding: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+        a:hover, a:focus{
+            background-color: #fff;
+            color: #445ed1;
+        }
+        .element{
+            background-color: blueviolet;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-left: 100px;
+            margin-top: 100px;
+            transition: all 0.3s ease-in-out;
+        }
+        .element:hover{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Events</a>
+    </nav>
+    <div class="element"></div>
+<!-- 
+/* Keyword values */
+flex: auto;
+flex: initial;
+flex: none;
+
+/* One value, unitless number: flex-grow
+flex-basis is then equal to 0. */
+flex: 2;
+
+/* One value, width/height: flex-basis */
+flex: 10em;
+flex: 30%;
+flex: min-content;
+
+/* Two values: flex-grow | flex-basis */
+flex: 1 30px;
+
+/* Two values: flex-grow | flex-shrink */
+flex: 2 2;
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+flex: 2 2 10%;
+
+/* Global values */
+flex: inherit;
+flex: initial;
+flex: revert;
+flex: revert-layer;
+flex: unset;
+
+ -->
+</body>
+</html>

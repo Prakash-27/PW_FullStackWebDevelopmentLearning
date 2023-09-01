@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selector</title>
+    
+    <style>
+        h1:hover {
+            background-color: #a50707;
+        }
+
+        button:focus {
+            font-size: larger;
+            background-color: #18f5f5fd;
+            color: #e5ff00;
+        }
+
+        input:required {
+            background-color: #e24a4a;
+        }
+
+        input:disabled {
+            background-color: #82f5f5;
+        }
+
+        div:first-child {
+            background-color: #386bda;
+        }
+
+        div:last-child {
+            background-color: #90e62f;
+        }
+
+        div:nth-child(2n-1) {
+            background-color: #05943c;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hover</h1>
+    <button>Focus</button>
+    <input type="text" required="true" />
+    <input type="checkbox" />
+    <input type="text" disabled="true" />
+    <div>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+    </div>
+</body>
+</html>

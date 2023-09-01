@@ -1,0 +1,418 @@
+1. What is the purpose of margin in CSS?
+
+>>>To specify the space between an element and its neighboring elements. 
+
+
+To define the outermost border of an element.
+
+
+To determine the width of an element.
+
+
+To apply a background color to an element.
+
+
+2.What is the purpose of padding in CSS?
+
+To define the outermost border of an element.
+
+
+To determine the width of an element
+
+
+To apply a background color to an element.
+
+
+>>>To specify the space between an element's content and its border.
+
+
+3.Which CSS property is used to set the margin for all four sides of an element simultaneously?
+
+margin-top
+
+
+margin-bottom
+
+
+>>>margin
+
+
+margin-left/right
+
+
+4.Which CSS property is used to set the padding for all four sides of an element simultaneously?
+
+padding-top
+
+
+padding-bottom
+
+
+>>>padding
+
+
+padding-left/right
+
+
+5.What is the default value for margin and padding in CSS?
+
+>>>0
+
+
+1px
+
+
+auto
+
+
+inherit
+
+
+6.Which CSS value is used to center an element horizontally?
+
+center
+
+
+middle
+
+
+auto
+
+
+>>>margin: 0 auto
+
+
+7.Which CSS property is used to collapse the margins between adjacent elements?
+
+margin-collapse
+
+
+margin-spacing
+
+
+>>>margin-collapse: collapse
+
+
+margin-spacing: collapse
+
+
+8.Which CSS property is used to add space between the border of an element and its content?
+
+border-spacing
+
+
+content-spacing
+
+
+border-margin
+
+
+>>>padding
+
+
+9.Which CSS property is used to specify the width, style, and color of an element's border?
+
+border-style
+
+
+border-color
+
+
+border-width
+
+
+>>>border
+
+
+10.How many values can be specified for the CSS border property?
+
+One
+
+
+Two
+
+
+>>>Three
+
+
+Four
+
+
+11.Which CSS property is used to set the style of an element's border?
+
+border-width
+
+
+border-color
+
+
+>>>border-style
+
+
+border
+
+
+12.What is the default value of the border-style property?
+
+solid
+
+
+dashed
+
+
+>>>none
+
+
+hidden
+
+
+13.Which CSS property is used to set the color of an element's border?
+
+>>>border-color
+
+
+border-style
+
+
+border-width
+
+
+border
+
+
+14.Which CSS property is used to specify the space between an element's border and its content?
+
+margin
+
+
+>>>padding
+
+
+outline
+
+
+border-spacing
+
+
+15.Which CSS property is used to create an outline around an element, regardless of its position in the box model?
+
+border
+
+
+outline-style
+
+
+outline-color
+
+
+>>>outline
+
+
+16.What is the purpose of the CSS box model?
+
+>>>To define the layout and spacing of elements on a web page.
+
+
+To control the position of elements within a web page.
+
+
+To specify the visual appearance of elements on a web page.
+
+
+To define the color scheme of elements on a web page.
+
+
+17.Which CSS property is used to set the height of an element?
+
+width
+
+
+>>>height
+
+
+size
+
+
+dimension
+
+
+18.Which CSS property is used to set the width of an element?
+
+>>>width
+
+
+size
+
+
+dimension
+
+
+length
+
+
+19.Which CSS property is used to set both the height and width of an element simultaneously?
+
+>>>size
+
+
+dimension
+
+
+width-height
+
+
+height-width
+
+
+20.Which CSS property is used to set the minimum height of an element?
+
+>>>min-height
+
+
+height-min
+
+
+min-dimension
+
+
+height-minimum
+
+
+21.Which CSS property is used to set the maximum height of an element?
+
+>>>max-height
+
+
+height-max
+
+
+max-dimension
+
+
+height-maximum
+
+
+22.Which CSS property is used to set the minimum width of an element?
+
+>>>min-width
+
+
+width-min
+
+
+min-dimension
+
+
+width-minimum
+
+
+23.Which CSS property is used to set the maximum width of an element?
+
+>>>max-width
+
+
+width-max
+
+
+max-dimension
+
+
+width-maximum
+
+
+24.Which CSS property is used to control how the total width and height of an element is calculated, including padding and border?
+
+>>>box-sizing
+
+
+dimension-sizing
+
+
+size-calculation
+
+
+box-calculation
+
+25.Which CSS property is used to change the style of list items (e.g., bullets or numbering)?
+
+list-style-type
+
+
+list-style-image
+
+
+>>>list-style
+
+
+list-decoration
+
+
+26.Which value of the list-style-type property will remove the bullet or numbering from list items?
+
+
+>>>none
+
+
+circle
+
+
+square
+
+
+disc
+
+
+27.Which CSS property is used to set an image as the marker for list items?
+
+list-style-type
+
+
+>>>list-style-image
+
+
+list-style
+
+
+marker-image
+
+
+28.Which CSS property is used to set the spacing between table cells?
+
+table-spacing
+
+
+table-spacing-horizontal
+
+
+cell-spacing
+
+
+>>>border-spacing
+
+
+29.Which CSS property is used to set the width of table columns?
+
+table-width
+
+
+>>>column-width
+
+
+column-size
+
+
+width
+
+
+30.Which CSS property is used to change the opacity (transparency) of an element?
+
+>>>opacity
+
+
+transparency
+
+
+visibility
+
+
+alpha

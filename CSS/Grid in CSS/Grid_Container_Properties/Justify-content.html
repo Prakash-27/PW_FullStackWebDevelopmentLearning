@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content</title>
+    <style>
+        .container{
+             /* height: 100vh; */
+            /* display: grid; */
+            border: 2px solid black;
+            /* grid-template-columns: repeat(3, 100px); */
+            /* grid-template-rows: repeat(2, 50px); */
+            /* justify-content: center;     */
+        }
+        .num{
+            border: 1px solid #ccc;
+        }
+        .center{
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(2, 25px);
+            justify-content: center;
+        }
+        .end{
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(2, 25px);
+            justify-content: end;
+        }
+        .start{
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(2, 25px);
+            justify-content: start;
+        }
+        .space-between{
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(2, 25px);
+            justify-content: space-between;
+        }
+        .space-around{
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(2, 25px);
+            justify-content: space-around;
+        }
+        .space-evenly{
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(2, 25px);
+            justify-content: space-evenly;
+        }
+        p{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>justify-content: center</p>
+        <div class="center">
+        <div class="num">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+        <div class="num">4</div>
+        <div class="num">5</div>
+        <div class="num">6</div>
+        </div>
+        <hr/>
+        <p>justify-content: end</p>
+        <div class="end">
+        <div class="num">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+        <div class="num">4</div>
+        <div class="num">5</div>
+        <div class="num">6</div>
+        </div>
+        <hr/>
+        <p>justify-content: start</p>
+        <div class="start">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+        </div>
+        <hr/>
+        <p>justify-content: space-between</p>
+        <div class="space-between">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+        </div>
+        <hr/>
+        <p>justify-content: space-around</p>
+        <div class="space-around">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+        </div>
+        <hr/>
+        <p>justify-content: space-evenly</p>
+        <div class="space-evenly">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+        </div>
+    </div>
+</body>
+</html>
