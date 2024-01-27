@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Selectors Part-2</title>
+    <style>
+        .highlight{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>DOM Selectors</h1>
+
+    <p id="myParagraph">This is the Paragraph with dummy text</p>
+
+    <ul>
+        <li class="listItem">Item 1</li>
+        <li class="listItem">Item 2</li>
+        <li class="listItem">Item 3</li>
+        <li class="listItem">Item 4</li>
+        <li class="listItem">Item 5</li>
+    </ul>
+    <ol>
+        <li>Item 10</li>
+        <li>Item 11</li>
+        <li>Item 12</li>
+        <li>Item 13</li>
+        <li>Item 14</li>
+    </ol>
+
+    <script>
+        // console.log(document.dir);
+        //DOM selectors
+
+        //1)
+        // const paragraph_id = document.getElementById('myParagraph')
+        // paragraph_id.addEventListener('click', () => {
+        //     paragraph_id.classList.toggle('highlight')
+        // })
+
+        //2)
+        // const liItems = document.getElementsByTagName('li')
+        // console.log(liItems);
+
+        //3)
+        // const listItems = document.getElementsByClassName('listItem')
+        // console.log(typeof listItems); //HTML Collections(or Live Collections) is Object so here we want to make it as Array to iterate forEach.
+        // console.log(listItems);
+        // Array(listItems).forEach(item => {
+        //     item.textContext = 'Hello World'
+        // });
+
+        //4)
+        // const allLiItems = document.querySelectorAll('#idname')
+        // const allLiItems = document.querySelectorAll('.classname')
+        // const allLiItems = document.querySelectorAll('div p') // Combination selectors, this is space combination selector you can use psuedoSelectors, you can use dataAttributes, you can use lot more here and pass any Kind of selectors here, so this returns nodeList 
+
+        // const allLiItems = document.querySelectorAll('.listItem') // querySelectorAll target multiple elemnts so it gives NodeList
+        // allLiItems.forEach(liItem => {
+        //     liItem.textContent = 'Hello World'
+        //     console.log(typeof liItem);
+        // });
+
+        //5)
+        // const firstliItem = document.querySelector('.listItem')
+        // console.log(firstliItem);
+        // firstliItem.style.backgroundColor = 'green'
+    </script>
+
+</body>
+</html>

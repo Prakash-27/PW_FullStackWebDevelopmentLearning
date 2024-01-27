@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent Child Relationship</title>
+</head>
+<body>
+    <div id="parent">
+        <p>This is a Child element.</p>
+    </div>
+
+    <!-- previousSibling and nextSibling -->
+    <img id="imgOne"/><img id="imgTwo"/><img id="imgThree"/><img id="imgFour"/>
+
+    <img id="imageOne"/>
+    <img id="imageTwo"/>
+    <img id="imageThree"/>
+    <img id="imageFour"/>
+    <!-- previousSibling and nextSibling -->
+
+    <!-- firstChild -->
+    <div id="imgContainer"><img id="imgOne"/><img id="imgTwo"/><img id="imgThree"/></div>
+
+    <div id="imgContainerOne">
+        <img id="imgOne"/>
+    </div>
+    <div id="imgContainerTwo"><!-- first image --><img id="imgTwo"/></div>
+    <div id="imgContainerThree">images<img id="imgThree"></div>
+    <!-- firstChild -->
+
+    <!-- lastChild -->
+    <div id="imageContainer"><img id="imageOne"/><img id="imageTwo"/><img id="imageThree"/></div>
+
+    <div id="imageContainerOne">
+        <img id="imageOne"/>
+        <img id="imageTwo"/>
+    </div>
+    <div id="imageContainerTwo"><!-- start --><img id="imageOne"/><!-- end --></div>
+    <div id="imageContainerThree">image1<img id="imageOne"/>image2<img id="imageTwo"/>some text</div>
+    <!-- lastChild -->
+
+
+    <script src="./index.js">
+
+    </script>
+</body>
+</html>

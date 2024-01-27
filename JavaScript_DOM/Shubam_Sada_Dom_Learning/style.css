@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+    color: #0094d8;
+}
+
+.change {
+    background-color: lightgray;
+}
+
+.highlight {
+    background-color: salmon;
+}
+
+.important {
+    font-weight: 900;
+    border: solid 2px rgb(0, 109, 0);
+}
+
+.success {
+    border: solid 2px rgb(0, 109, 0);
+}
+
+.active{
+    border: 2px solid rgb(18, 18, 228);
+}
+
+.inactive{
+    border: 2px solid rgb(160, 214, 12);
+}

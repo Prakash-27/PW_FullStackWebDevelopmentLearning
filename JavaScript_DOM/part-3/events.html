@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events</h1>
+
+    <button id="mybtn">Click Me!</button>
+
+    <script>
+        const button = document.getElementById("mybtn")
+
+        //Event handler function
+        function handleClick() {
+            alert('clicked')
+        }
+
+        button.addEventListener('click', handleClick)
+        // button.addEventListener('click', handleClick, {capture: true})
+        // button.addEventListener('click', handleClick, {once: true})
+
+        //remove the event listener after 3 secs
+        function removeHandleClick() {
+            button.removeEventListener('click', handleClick)
+            console.log('Event Listener removed');
+        }
+
+        setTimeout(removeHandleClick, 3000)
+
+    </script>
+</body>
+</html>
