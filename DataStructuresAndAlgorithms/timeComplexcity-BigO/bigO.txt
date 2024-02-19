@@ -1,0 +1,45 @@
+- what is good code?
+Good code can be described in two things or two points:
+1.Readable (Readablity) genrally clean, other can read your code.
+2.Scalable
+
+Image we have a task or we want to bake a cake, we have a recipe over here and this recipe we gonna use it in kitchen to bake a cake and there is a good way of baking a cake (or) bad way of baking a cake.
+
+Computer are machines in order to produce something for us and computer work in a same way, we have instruction that we give as a code and that instructions are to machines(or)computer and given instructions will provide us some sort of an output. eg: to turn on the light.
+
+likewise there are many way to bake a cake and many way to give a instruction to turn on the light, like that many way to solve the problem. 
+
+And there are efficient and inefficient way to give instructions 
+(let see the example of bigO scalablity -> O(n)Example.js).
+
+When we talk about bigO and scalability of code, we simply mean when we grow bigger and bigger with our input how much does Algorithm slow down, they are less its slow down (or) its slow down the better it is.
+
+So instead of using performance.now using time to measure the efficieny of our function we can just calculate how many operations the computer has to perform,
+because each operation takes time on a computer, So bigO allows us and constrains us with how many steps it takes in a function.
+
+
+What is the big O of the function findingnemo?
+
+to make this a little bit cleaner, let's just remove performance.now  because we have learned that it's not very important.
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. O(1)
+-------
+function compressFirstBox(boxes){
+    console.log(boxes[0]);
+}
+
+This function simply as console.log(boxes[0]), so that is it's logging out just the first item in the box, what would you say the big O of this function is?
+
+How many steps or operations does this function take?, if the box is increased from zero to maybe ten to maybe 100 to 100000? what would happen here?
+
+This is what we call O(1) - Constant Time, that is no matter how many times the boxes increase here or however many boxes we have, were always just grabbing the first item in the array.
+
+If we look at this with an example, if we had an array of boxes here and we run it through the function, that just takes the first item in the array, well the number of operations is one, no matter how big this the number of boxes are, we are only doing one thing so it the Constant Time.
+
+If we look at this on graph, if we have one Element (or) one box, we do one operation, if we have three again, we still do just one operation because, we are just grabbing the first item in the array.
+
+If we have let's say five same thing, seven same thing, and what about nine again same number of operation, and this is I don't know if you can see the line, but this is just Constant Time, it's not linear time it was where it increases and increases with the number of operations, the number of operations just stays flat but I have a question here what if we do something different? what if we do something like this?
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//3. 
