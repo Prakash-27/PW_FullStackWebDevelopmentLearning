@@ -1,0 +1,8 @@
+Introduction to the Database:
+-----------------------------
+- What is Database.
+- Why do we need databases.
+- File Based Storage System.
+- Challenges of FileBased Storage System
+- Database Management System
+- Data Modeling.

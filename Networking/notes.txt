@@ -1,0 +1,348 @@
+Terminologies of Computer Networks
+----------------------------------
+
+1.What is a Network?
+--------------------
+A Network is defined as a group (or) system of interconnected people (or) items
+
+Eg: 1.Alumini,
+    2. Train Stations -> Each Station is connected directly or indirectly to other Stations via Railway tracks makes a Railway Network.
+
+2.What is a Computer Network?
+-----------------------------
+Computer connected to each other with cables or wireless technologies makes a Computer network.
+
+Computer network helps in 2 things
+(i) communication
+(ii) Sharing Resources
+
+3.What is Internet?
+-------------------
+Internet is essentially a network of Computer Network. (interconnected Computer networks).
+they use some standard practice from common & Resource Sharing.
+
+4.What is Intranet?
+-------------------
+It's a networks of Computer Network (Private Network group You have)
+here you have to prepare own set of Protocal, own set of rules for doing communication and Resources Sharing.
+
+5.What is a Protocal?
+---------------------
+Protocal refers to a set of rules governing the exchange (or) transmission of data between devices.
+
+6.What is WWW?
+--------------
+WWW stands for (World Wide Web) it refers to a system of interconnected Resources available on Internet.
+WWW is built on top of Internet & it is away to allow users to share information.
+
+7.What is IP Address?
+---------------------
+It is Unique Numerical Identifier.
+It is assigned uniquely to every Computer/device connected in a Computer networks.
+
+IPV4 - 32 bit Address comprising of numbers
+     - The human readable way is the dotted decimal notation. (--------.--------.--------.--------)
+       -.-.-.- (decimal range was 0-255) -> 1.2.11.3
+
+8.What is Port?
+---------------
+Any device connected to a network, might be running multiple processes in order to distinguish
+this processes, we have Port numbers. All this processes are bound to same IP Address, but have 
+different port numbers 127.0.0.1:3000
+                       --------- ----
+                      IP address Port number
+It is a Unique identifier to specify one of the running services.                   
+IP Address idendify end systems but ports idendify applications on end systems.
+
+every applications has is 16 bit Port number
+
+          0 - (2^11 - 1) => Range of available Port number.
+          0 - 65535 this is a actual range of Port numbers available in any machine.
+
+         (i) 0 - 1023 -> well known ports 
+                   -> This are reserved for specific applications and Protocal   
+HTTP -> is port 80 
+HTTPS -> is port 443
+
+         (ii) 1024 - 49152 -> Register Ports
+                       -> They are used by specific applications but not system reserved (most of the Protocal won't be lying in the port range but some processes that you are running, If you run a SQL Server that will run on port 1433)
+
+MongoDB runs on the port 27017
+MySQL runs on the port 3306
+
+         (iii) 49152 - 65535 -> This are future Purpose.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DNS
+---
+DNS stands for Domain Name Servers
+Domain Name -> are Unique names that identifies a website and are mapped to an IP Address
+               to get this mapping we use DNS.
+
+IP Address are difficult for humans to remember.
+DNS is the layer that helps us to map domains to Ip address.     
+DNS LookUp is the process based on which Domain to IP resolution is done. 
+
+http://cs.harvard.edu/courses/index.html
+----   -------------- -------------
+  |           |             |
+  \/          \/            -------------------------|
+Protocal    Main Domain (or) main host               \/
+                                                files/Resources
+
+this are early day's when Internet came's
+-----------------------------------------
+HOSTS.txt -> file is maintained by network information center
+URL -IP  
+
+we need to download the HOSTS.txt from network information center to our local computer to map the DNS
+if the HOSTS.txt is domain name is not there in the downloaded file the we need to report it to the network information center to update 
+and the we download it again to use the corresponding URL mapping.
+
+After this system is not scalable the amount of Websites now actually deals with this is definitely Not Scalable.
+
+So we introduced some thing called as Domain Name systems (or) Domain Name Servers (DNS).
+
+Best part of DNS was this also maps domains to IP.
+This can handle Huge amount of records.
+This is not a centralized overall this is distributed system.
+This is very Robust to failures.
+Technically this DNS system that we have develop is more hierarchy based system, internally it make something called DNS Tree this will help us to map corresponding DNS to IP.
+Apart from that DNS system is read heavy system. 
+less consistent, this is why we cache DNS when we cache it we can query it much faster.
+
+hierarchy based system in DNS
+-----------------------------
+CS.harvard.edu
+-- ------- ---
+|     |      |----> Top level Domain     
+|     ------> Second level Domain
+------> Sub domain
+
+In DNS system all the three domains are treated seperately.
+parts of the URL are done to map it in a DNS Server.
+
+                              Root Server
+                                  |
+                                  \/
+            ------------------------------------------------                 
+            |                |                     |       |
+            |                |                     |       |
+            \/               \/                    \/      \/
+            edu              com                   io      in     --> Top level Domains
+             |                |                     |
+       -------------      -------------             \/
+       |           |      |           |            matrix.io --> Second level Domains
+       \/          \/     |           |
+ harvard.edu stanford.edu \/          \/
+      |                   google.com  quora.com
+-------------
+|           |
+\/          \/
+CS          open --> Sub Domains
+
+
+Root DNS Server
+---------------
+First POC (Point Of Contact) for a DNS query.
+they existed at top of hierarchy and point to multiple Top level Domains (TLDs)
+
+Top level Domains server 
+------------------------
+For each domains we have a Top level domains part eg: edu, io, com, in, gov etc.
+
+Authoritative Server
+--------------------
+Each organization with a public email or website should provide DNS records This records can be stored on a dedicated DNS server owned by the organization (or) they can use a 3rd party one.
+
+Local DNS cache
+---------------
+mapping are locally cached.
+local resolver library.
+local resolver library is part of OS and whenever actually do a DNS LookUp and you get a new response for corresponding URL for IP mapping it try to cache it.
+If local DNS has nothing cached then Authoritative/self owned servers are queryed.
+This local DNS is configured generally using DHCP Protocal.
+
+DNS query
+---------
+DNS query can be generally recursive in nature, based on server implementation they can non-recursive in nature.
+
+If you want to check corresponding DNS mapping for any URL you can use the -> dig tool as => dig google.com 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OSI Model & TCP
+---------------
+There are 2 main networking Models 
+(i) TCP/IP
+(ii) OSI Model
+
+(i)TCP/IP Model:
+-------------
+It is transmission control Protocal/Internet Protocal
+this is a fundamental suite used for communication over Internet.
+this is a 5 layer Model.
+
+TCP Protocal actually more reliable, ordered and error check delivery of data Application.
+This TCP is more part of the Transport Layer.
+
+While the Internet Protocal (Ip) is for Routing of packets that actually send to the network between 2 applications.
+
+------------------------------
+Application Layer            |
+------------------------------
+Transport Layer              |
+------------------------------
+Network Layer                |
+------------------------------
+Data Link Layer              |
+------------------------------
+Physical Layer               |
+------------------------------
+
+Application Layer:
+------------------
+- It is implemented on end softwares.
+- end users interact with this layer.
+- Application layer is the one that starts an outgoing message journey in the network stack. 
+- Hyper Text Transfer Protocal (HTTP), File Transfer Protocal (FTP), Simple Mail Transfer Protocal (SMTP) all of these exicted in the application layer because the end application initiate the request to make an HTTP request, to make a FTP request, to make a SMTP request.
+- From the application layer only the whole journey of the messages (or) the network data actually starts.
+
+Transport Layer:
+----------------
+- this layer is responsible for reliable data Transfer.
+- Apart from reliable data transfer, Application Layer Protocal like HTTP dependent on Transport Layer Protocal, if you have to make HTTP request somewhere, then first setup TCP connection over the TCP connection HTTP request goes and TCP is actually part of Transport Layer, it actually establishes connection between 2 devices.
+- It ensures data packets are transfered in correct order.
+- When TCP/UDP(User Datagram Protocal) this are 2 main protocal that exicted in a Transport Layer Protocal.
+- When data comes to Transport layer, we call it as Datagram/segment, if you use UDP it is Datagram (or) if you use TCP it is segment.
+- what happen is from the application layer you made some interaction in the end application and made a request, request first collected in a Transport Layer, the responsiblity of the Transport layer is to make sure that the data connection is reliable, so you will not use data, and then any error involve in the data what ever data you are going to sending, in the form of small packets that packets are receive in the order fashion, there are multiple algoritms that goes behind the scenes in Transport Layer, but we are not discussing about that you can understand that internal algoritms of Transport layer actually Handles all of this.
+
+TCP:
+----
+- TCP Provides reliable connection.
+- it is ensures the whatever data you actually sending, actually get received on the other end.
+- it works on a Acknowledge based Mechanism, if you actually used HTTP it is based on TCP Protocal, it actually using something that HTTP that is based on TCP that many actually sends the HTTP request accpect an Acknowledgment packet, Acknowledgment means YES, this data as been received successfully on the other users end so you receive Acknowledgment around that.    
+- But TCP works well for things like mail, chat services, downloading some webPages so on.  
+
+UDP:
+----
+- UDP doesn't Provides a reliable connection.
+- it actually doesn't ensures around that.
+- it is a bit more fast, because it doesn't have to do error checking, ordering, reliable connections servers, that why UDP is fast.
+- eg: if you are seeing a live stream, and if there is a no Internet connectivity, then you might miss some packets of the live stream, and the what ever the latest data comming in the live stream you start seeing that, that more or less UDP protocal.
+- eg: if you are chating and then you have low Internet connectivity and you miss some messages that's gonna be a problematic, let say You miss some mails that's gone be a problematic, in that case you need a reliable connection.  
+- There is no Acknowledgment based theory exicted in UDP Protocal. 
+- UDP can be used for Online Gaming, if you have online Gaming, if you have no Internet connectivity you lose some frames, but at the moment Internet come back you are at the latest frame, you don't get previous frame that you have lost.
+- same thing for live steaming. 
+
+Network Layer:
+--------------
+- What you are sending Datagram in UDP (or) segment in TCP when it reaches network layer messages it is called as packet.
+- It facilitate the transportion of packets from one end system to another end.
+- They also handles routing Mechanism.
+- Over the Whole network by network protocal what will be the shortest path with which packets can go to the receiver end that the Technically responsible of network Layer.
+- All the Routing protocal are handled by the network Layer.
+- it also helps in Multiplexing(in Multiplexing multiple signals (or) multiple transmission packet are club together into one and then send it on the receiver end they are Demultiplexed eg: multiple signals are multiple packets are comming together now they are actually distributed) and Demultiplexing 
+- the main protocal that exicted here is Ip (Internet Protocal), also it helps to rout all the packets it all comes to network layer to there correct destination.
+
+Data Link Layer:
+----------------
+- They handle flow control & error correction/detection.
+- Any error that actually occurs you loss some packets there is some error that is coming up in the packet some miss information any kind of thing this is the responsiblity of data link layer actually handle that there are algoritms inside the data link layer that helps in error correction and error detection both of those things we no need to go to these algoritms but they are actually present their Inorder to facilitate all of this feature.
+- It gets packets from network Layer & transfer Them to Physical layer   
+
+Physical Layer:
+---------------
+- Mainly Hardware layer there are long wired connection that exicted in between sending that final electrical signal to the Hardware that Technically the Physical layer.
+- Above satellite connection that's were Physical layer come into the picture optics fiber you must be having in you homes that the Physical layer, so that Data link layer transfer into a Physical Layer.
+- Now from the Physical layer it get's to the receiver end, on the receiver end then again it starts coming to data link Layer, above the network stack the network layer all of this stuff, because if there is a if you have put transfer over the internet cross continent This takes the hole routes inorder to actually reach at the particular point of time. this is how exactly things work with TCP/Ip Model. 
+
+(ii) OSI Model:
+---------------
+this is a 7 layer Model.
+
+------------------------------
+Application Layer            |
+------------------------------
+Presentation Layer           |
+------------------------------
+Session Layer                |
+------------------------------
+Transport Layer              |
+------------------------------
+Network Layer                |
+------------------------------
+Data Link Layer              |
+------------------------------
+Physical Layer               |
+------------------------------
+
+Presentation Layer:
+-------------------
+- It is handle encoding and decoding of Data.
+- if there is any encoding or compression that is expected to be done on this data that's handled by Presentation Layer.
+
+Session Layer:
+--------------
+- User Oauth session are Managed by Session Layer.
+- In TCP/Ip layer both of this things along with the application layer responsibility, at together handled by the Application Layer, TCP/Ip Model is bit more easier to understand as well.
+- Where as OSI Model has distributed your application layer into 3 Layers. 
+- If we go through corresponding layers one by one then first of all we are having our Application Layer this layer interact with users it is Responsible for receiving data to the user or showing data to the user.
+  Eg: email client your instant messaging platform like what'sapp and everything, or ohter apps likes zomato and everything on TCP/Ip Model in the application layer the main protocal are HTTP(Hyper Text Transfer Protocal, the webpage you sees in the form of html how you actually sends Hyper text over the network rule around that is actually mentioned in the HTTP), SMTP(Simple mail transfer protocal, how mail should send over the network), FtP(File transfer protocal, how file should be send), then you have Transport Layer is more or less responsible for reliable data delivery from one application to another it establishes the connection between two devices based on that connection absolutely the data transfer is happen.
+- Technically on Transport Layer you have 2 main protocals TCP/Ip and UDP Protocal, UDP is not reliable, TCP/Ip is reliable Protocal. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Web Sockets
+-----------
+- it allows real time communication, between a web browser and a server or two server, 2 end system or 2 end machine, it can help you to real time communication, you don't need to setup a communication everytime to send a request, send a response, it will be kind of like a pipline kind of structure, where there will be a inflex of data and outflow of data from both the ends.
+- this can help you to modern web developer, software Engineers, use this kind of technology to make more interact webApplication, On you What'sApp without refreshing your what'sapp again and again, without doing anything to get the message out there, for a webpage if you want to get a new data on the you have to manually refresh it, that the power of web Sockets are used in application like chat application let's say when notification pop's up automatically on webpage without refreshing the webpage that's actully things around the web Sockets.
+- you can build application that respond immediately to user action or chat application, live feed etc.
+- web Sockets are actually build on TCP/Ip Protocal.
+
+Three Transmission Modes:
+-------------------------
+(i) Simplex (In a Simplex mode data can only flow in one direction from one sender to receiver, cannot flow from receiver to sender back, let's say if we have some broadCasting Mechanism in your chat application were you have to broadCast message where you have don't expect to receiving any thing in back that kind of like a Simplex Transmission Mode for web Socket.)
+(ii) Half Duplex Transmission Mode (In a Half Duplex Mode data flows in both direction not simultaneously one device will transmitted to data at a time other is going to wait other is may be other device is going to send the data, for Example walky talky kind of example).
+(iii) Most Powerful One is Full Duplex Transmission Mode (In a full Duplex suituation both the end system can simultaneously send the data and simultaneously receive the data, for example something like a chat application all together this is how actully things are done).
+
+- Web Socket is also called as communication protocal, and majorly communication protocal is a full Duplex, this is also called as Bidirectional data transfer between a client and server over the internet.
+- Unlikely the traditional HTTP is Unidirectional and stateless, web Socket is not a Unidirectional it is a Bidirectional both of the end machine can actually communicate with each other.
+- In real time it kind of a Pipeline based structure where the pipline is set up forever, let's say one is out of internet, one machine is not having Internet when it comes back the pipeline get's activated automatically and whatever the data inside the pipline actually get push to the pipline and receiver. 
+- You can say that it is more of stateful connection actually maintained, and how exactly this are set up
+
+                client                          server 
+                  |                               |
+                  |         HandShake request     |
+                  |------------------------------>|
+                  |        connection Open        |
+                  |<------------------------------|
+                  |                               |
+                  |                               |
+                  |        Bidirectional msg      |
+                  |<----------------------------->|
+                  |                               |
+                  |                               |
+                  |                               |
+                  |                               |
+                  |                               |
+                  |                               |
+                  |                               |
+                  |                               |
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Introduction To OS:
+-------------------
+- Introduction
+- Operating system
+- What is the need for an OS?
+- Kernel
+- Development of first OS.
+- Types of OS.
+- Features of OS.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Linux Command:
+--------------
+refer PW Skills Networking Notes Pdf
+
+

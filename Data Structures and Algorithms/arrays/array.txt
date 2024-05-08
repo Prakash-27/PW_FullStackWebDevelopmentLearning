@@ -1,0 +1,12 @@
+Array [Juice, Apple, Cheese, Kale, Mango, Grapes, Eggs, Bread]
+       0        1       2      3     4       5      6     7    
+
+lookup - O(1)
+push - O(1)
+insert O(n)
+delete O(n)
+
+Arrays which some time called as List, Organizes items sequentially, That means one after another in memory.
+Luckily for us we're starting with this because arrays have the least amount of rules and because they're stored in contiguous memory, that is in order They also have the smallest footprint of any data structure so if all you need is to store some data and iterate over it, that is go one by one, step by step Arrays are the best choice, Especially if, you know the indices that is here on the Array the items you're storing and just as a quick glance and we'll go over this in more detail in later videos.
+
+Lookup or access with arrays are constant time of one O(1) it's super, super fast, other actions or methods that we're going to go over such as push, are also fast, but then inserts and deletes are O(n) (or) linear time, but in order to demonstrate arrays, let's actually use code to show you an example.
