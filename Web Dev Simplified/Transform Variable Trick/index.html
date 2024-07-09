@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Variable Trick</title>
+    <style>
+        .btn {
+            display: block;
+            background-color: #00AAFF;
+            margin: 2rem 4rem;
+            width: 100px;
+            height: 25px;
+            border: none;
+            border-radius: .25rem;
+        }
+        .btn {
+            /* transform: scale(1.2) rotate(10deg); */
+            transform: 
+              scale(var(--scale, 1.2)) 
+              rotate(var(--rotation, 10deg));
+        }
+
+        .big {
+            /* transform: scale(2) rotate(10deg); */
+            --scale: 2;
+        }
+
+        .tilted {
+            /* transform: scale(1.2) rotate(-10deg); */
+            --rotation: -10deg;
+        }
+
+        .big.tilted {
+            /* transform: scale(2) rotate(-10deg); */
+        }
+    </style>
+</head>
+<body>
+    <button class="btn"></button>
+    <button class="btn big "></button>
+    <button class="btn tilted"></button>
+    <button class="btn big tilted"></button>
+</body>
+</html>

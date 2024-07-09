@@ -1,0 +1,14 @@
+.box {
+    background: rebeccapurple;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+@custom-media --small (width >= 400px);
+
+@media (--small) {
+    .box {
+        background: red;
+    }
+}

@@ -1,0 +1,52 @@
+.btn.btn-outline:hover, .btn.btn-outline:focus {
+    background: hsl(200, 50%, 90%);
+}
+
+.btn + .btn {
+    margin-left: .25rem;
+}
+
+main, .sidebar {
+    container-type: inline-size;
+}
+
+.sidebar {
+    container-type: inline-size;
+    container-name: sidebar;
+}
+
+@container sidebar (max-width: 1000px) {
+    .card {
+        background: red;
+    }
+}
+
+@container (max-width: 500px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-header {
+        width: 100%;
+    }
+}
+
+.sidebar {
+    background: black;
+}
+
+:has(> .card) {
+    container-type: inline-size;
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name */
+
+/* .open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */

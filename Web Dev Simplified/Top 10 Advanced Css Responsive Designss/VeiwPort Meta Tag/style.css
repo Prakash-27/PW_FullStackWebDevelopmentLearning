@@ -1,0 +1,46 @@
+.box {
+    background: rebeccapurple;
+    width: 200px;
+    height: 200px;
+}
+
+/* @media (min-width: 300px) {
+    .box {
+        background: red;
+    }
+} */
+
+/* @media (orientation: landscape) {
+    .box {
+        background: red;
+    }
+} */
+
+/* @media (min-aspect-ratio: 16 / 9) {
+    .box {
+        background: red;
+    }
+} */
+
+/* @media (width >= 300px) {
+    .box {
+        background: red;
+    }
+} */
+
+/* @media (100px <= width <= 300px) {
+    .box {
+        background: red;
+    }
+} */
+
+@media (100px <= width ) {
+    .box {
+        background: red;
+    }
+}
+
+
+
+
+

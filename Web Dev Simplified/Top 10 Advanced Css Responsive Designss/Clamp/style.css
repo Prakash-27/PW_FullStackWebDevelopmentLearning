@@ -1,0 +1,18 @@
+body {
+    /* display: flex; */
+    margin: 0;
+    font-size: clamp(.75rem, 1.5vw, 2rem);
+}
+
+.box {
+    background: rebeccapurple;
+    width: 200px;
+    height: 200px;
+
+    /* min-width: 300px;
+    width: 75%;
+    max-width: 500px; */
+    width: clamp(300px, 75%, 500px);
+}
+
+

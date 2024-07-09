@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span {
+            background-color: #979797;
+            color: white;
+            margin: 10px;
+            padding: 10px 20px;
+            width: 500px;
+            text-align: center;
+        }
+        .resizable{
+            resize: both;
+            overflow: hidden;
+
+            min-width: 200px;
+            width: 300px;
+            max-width: 400px;
+
+            min-height: 20px;
+            height: 40px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="resizable">721 x 401</span>
+        <span class="resizable">722 x 402</span>
+    </div>
+    
+</body>
+</html>
