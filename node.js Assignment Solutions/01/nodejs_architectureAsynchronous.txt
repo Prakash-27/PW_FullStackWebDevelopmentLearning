@@ -1,0 +1,30 @@
+The Node.js architecture offers several advantages,
+     making the server-side platform stand out among every other server-side language.
+     Moreover, the Node.js-developed server is always faster and more responsive compared 
+     to the one created using the other server development technologies.
+
+    Event loop: A key component of Node.js architecture, the event loop is an indefinite 
+                loop that processes requests from the event queue.
+    Event queue: A waiting list for requests that are received.
+    
+    Thread pool: Each server has a fixed number of threads, with one thread assigned to each complex request.
+    
+    External resources: These include databases, file systems, and compute.
+    
+    V8 engine: A fundamental part of Node.js architecture, the V8 engine converts JavaScript code to machine code that 
+               can be understood by machines.
+               
+    Asynchronous architecture: Allows Node.js to run multiple operations at once by performing non-blocking operations.
+    
+    I/O model: Involves reading and writing files to disk, interacting with the database, and HTTP requests.
+    
+    Node.js is written in JavaScript, but its core is written in C and C++.
+    Scalable Web App Development.
+     High Performance.
+     Cost-Effective with Full-Stack JavaScript.
+     Powerful Data Processing.
+     Easy to Learn and Quick to Adapt.
+     Concurrent Request Handling.
+     Lesser Loading Time.
+     Large and Active Community Support.
+     Helps in Building Cross-Platform Applications.
